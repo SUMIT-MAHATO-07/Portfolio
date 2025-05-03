@@ -8,15 +8,15 @@
 /* Fonts */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #ffffff;
-  color: #333;
+  color: white;
+  background: black;
 }
 
 /* Header */
 .header-container {
   display: flex;
   justify-content: space-between;
-  background-color: #222;
+  background-color: black;
   color: #fff;
   padding: 10px 7px;
 }
@@ -44,7 +44,7 @@ body {
   right: -350px;
   width: 250px;
   height: 100%;
-  background-color: #111;
+  background-color: #000000e7;
   padding: 20px;
   justify-content: space-between;
   transition: 0.7s ease;
@@ -83,8 +83,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background-color:white ;
-  color: black;
+  background-image:url("bg.jpg");
+  color: white;
   padding: 60px 20px;
   text-align: center;
 }
@@ -96,6 +96,7 @@ body {
 }
 
 .hero-text h2 {
+  text-align:left;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -128,36 +129,17 @@ body {
   margin-top: 10px;
   cursor: pointer;
   border-radius: 20px;
-  
+
 }
-.badges img { width: 60px; margin: 10px; }
+.badges img {
+ padding:1px;
+ width: 60px; 
+ margin: 10px; }
 
 .btn:hover {
   background-color: #007bff;
 }
 
-/* About Section */
-#myInfo {
-  display: none;
-  margin: 10% auto;
-  background-color: white;
-  color: #222;
-  padding: 20px;  /* Fixed padding */
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  width: 90%;
-  max-width: 600px;
-  box-sizing: border-box;
-}
-
-/* Responsive for large screens */
-@media (min-width: 768px) {
-  #mySection {
-    margin-top: 5%;
-    padding: 30px;
-    border-radius: 16px;
-  }
-}
 
 /* Social Links */
 .social-links {
@@ -176,7 +158,7 @@ body {
 
 /* Services Section */
 .services {
-  background-color: #fff;
+  background-color: none;
   padding: 60px 20px;
   text-align: center;
 }
@@ -198,12 +180,12 @@ body {
 }
 
 .service-box:hover {
-  background-color: gold;
+  background-color: none;
 }
 
 .service-box i {
   font-size: 40px;
-  color:#007bff;
+  color:gold;
   margin-bottom: 10px;
 }
 
@@ -219,7 +201,7 @@ body {
   margin-top: 10px;
   cursor: pointer;
   border-radius: 20px;
-  
+
     }
 
     /* Modal Form Container */
@@ -236,8 +218,8 @@ body {
 
     /* Modal Content Box */
 .modal-content {
-      background:gold;
-      padding: 30px;
+      background:silver;
+      padding: 20px;
       border-radius: 12px;
       width: 90%;
       max-width: 400px;
@@ -250,9 +232,7 @@ body {
       position: absolute;
       right: 15px;
       top: 15px;
-      border-radius: 50px;
-      background-color:gold;
-      font-size: 25px;
+      font-size: 35px;
       font-weight: bold;
       cursor: pointer;
     }
@@ -263,7 +243,7 @@ body {
       width: 100%;
       padding: 10px;
       margin-top: 10px;
-      border: 2px solid green;
+      border: 2px solid #007bff;
       border-radius: 6px;
       font-size: 14px;
     }
@@ -272,7 +252,7 @@ body {
 .modal-content button {
       margin-top: 15px;
       padding: 10px;
-      background: green;
+      background: black;
       color: white;
       border: none;
       border-radius: 6px;
@@ -287,10 +267,37 @@ body {
       font-weight: bold;
       display: none;
     }
+    
+
+/* About Section */
+#myInfo {
+  display: none;
+  margin: 10% auto;
+  background-color:#d2c98c ;
+  color: black;
+  padding: 20px;  
+  
+  /* Fixed padding */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* Responsive for large screens */
+@media (min-width: 768px) {
+  #mySection {
+    margin-top: 5%;
+    padding: 30px;
+    border-radius: 16px;
+  }
+}    
 /* About Section */
 .about {
-  background-color: #f9f9f9;
-  padding: 60px 20px;
+  background-color: none;
+  color:white;
+  padding: 30px 10px;
 }
 
 .about-content {
@@ -314,7 +321,7 @@ body {
   position: absolute;
   background-color: gold;
   color: black;
-  padding: 10px;
+  padding: 10px 5px;
   border-radius: 10px;
   font-weight: bold;
 }
@@ -351,7 +358,7 @@ body {
 /* Portfolio Section */
 .portfolio {
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: none;
   text-align: center;
 }
 
@@ -365,13 +372,13 @@ body {
 
 .portfolio-item {
   flex: 1 1 200px;
-  background-color: #eee;
+  background-color: #30385f77;
   padding: 20px;
   border-radius: 10px;
 }
 
 .portfolio-item:hover {
-  background-color: gold;
+  background-color: #ffbd4067;
 }
 .share-btn {
   position: fixed;
@@ -386,13 +393,17 @@ body {
   cursor: pointer;
   z-index: 1000;
 }
-
+a {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+}
 .share-btn:hover {
   background-color: #0056b3;
 }
 /* Footer */
 footer {
-  background-color: #222;
+  background-color: black;
   color: white;
   padding: 20px;
   text-align: center;
