@@ -12,6 +12,12 @@ body {
   background: black;
 }
 
+.s { color: brown; }
+    
+.k { color: blue; }
+    
+.m { color: green; }
+
 /* Header */
 .header-container {
   display: flex;
