@@ -12,11 +12,9 @@ body {
   background: black;
 }
 
-.s { color: brown; }
+.s { color: #007bff; }
     
-.k { color: blue; }
-    
-.m { color: green; }
+
 
 /* Header */
 .header-container {
