@@ -160,7 +160,41 @@
   </section>
   </section>
 </main>
-<iframe height="430" width="350" src="https://bot.dialogflow.com/4c408dd9-5ab6-440f-8ca0-28717ce79f82"></iframe>
+<!-- Floating Chatbot -->
+<div id="chatbot-container">
+  <iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    style="border: none; border-radius: 10px;"
+    src="https://bot.dialogflow.com/4c408dd9-5ab6-440f-8ca0-28717ce79f82">
+  </iframe>
+</div>
+
+<style>
+  #chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 768px) {
+    #chatbot-container {
+      width: 90%;
+      height: 400px;
+      right: 5%;
+    }
+
+    #chatbot-container iframe {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+</style>
 <!-- Footer -->
 <footer>
   <div class="container">
